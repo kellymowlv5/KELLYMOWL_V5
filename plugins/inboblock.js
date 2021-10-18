@@ -8,11 +8,8 @@ const Config = require('../config')
 // Inbox Block System
 // This Plugins By Hisham Muhammed 
 const INBO = "*Join this group for how to use bot and more*
-*Type .help get all commands*
-
-_Group 1_ ```https://chat.whatsapp.com/G4Hkr4cprbWEE9mYOI1fmX```
-_Group 2_ 
-```https://chat.whatsapp.com/HIGByrNtUoxA6JvJJscW0T```"
+*Type .help get all commands* Group 1 https://chat.whatsapp.com/G4Hkr4cprbWEE9mYOI1fmX
+Group2 https://chat.whatsapp.com/HIGByrNtUoxA6JvJJscW0T"
  if (Config.INBO == 'true') {
 Hisham.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true }, (async (message, match) => {
         let regexb1ichu = new RegExp('.')
