@@ -48,40 +48,12 @@ Project created by <a href="https://github.com/Fasil-vkn">Fasil-vkn</a> to make 
   ### Simple Method
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@phaticusthiccy/WhatsAsena-QR)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Fasil-vkn/Paathu)
-     </div>
 <br>
 <br >
-If Repl.it not working Try Termux for Qr scanning.Just Copy the Link Below in Termux
+Don't deploy 😁 
 ```
-bash <(curl -L https://t.ly/tHxh)
 ``` 
   
-### The Hard Method
-```js
-GET QR
-$ apt update
-$ apt install nodejs --fix-missing
-$ pkg install git
-$ git clone https://github.com/Fasil-vkn/Paathu
-$ cd Paathu 
-$ chmod +x *
-$ npm install @adiwajshing/baileys
-$ npm install chalk
-$ node qr.js
-```
-      
-```js
-SETUP
-$ git clone https://github.com/Fasil-vkn/Paathu
-$ cd Paathu
-$ chmod +x *
-$ npm i
-$ node qr.js
-   // scan the qr using whatsapp web on your phone
-$ node bot.js
-```
 
 
 ### ⚠️ Warning! 
@@ -96,7 +68,6 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
   <div align="center">
     
   [![Fasil-vkn](https://github.com/Fasil-vkn.png?size=100)](https://github.com/Fasil-vkn) 
-----|----|----|----
 
 [Fasil-vkn](https://github.com/Fasil-vkn) 
 
