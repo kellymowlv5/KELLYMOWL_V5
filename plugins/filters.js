@@ -145,7 +145,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
     if (!!message.mention && message.mention[0] == '918547134314@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
+await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
     const array = ['Mm','sed','mention','paathu','welcome','ചോദിക്കും','poda myre','Stanly','eid mubarak','mess','umma','zatan','ambada','mathi','Welcome','Paathu','viper','Name','eh','Bc','panni','Happy','good night','Ok bei','Dance','oh','Hi','ask you','Poda','Hlo','ayyo','chirikk','eatha']
     array.map( async (a) => {
