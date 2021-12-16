@@ -60,7 +60,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         let regex3 = new RegExp('thayolli')
         let regex4 = new RegExp('nude')
         let regex5 = new RegExp('boobs')
-        let regex6 = new RegExp('mia')
+        let regex6 = new RegExp('miakhalifa')
         let regex7 = new RegExp('poori')
         let regex8 = new RegExp('Sexy')
         let regex9 = new RegExp('sexy')
