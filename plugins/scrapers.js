@@ -49,7 +49,7 @@ const Slang = Language.getString('lyrics');
 const Clang = Language.getString('covid');
 
 const wiki = require('wikijs').default;
-var gis = require('g-i-s');
+var sourav = require('../raganork');
 
 var dlang_dsc = ''
 var closer_res = ''
@@ -544,19 +544,16 @@ if (config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
-        gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
-                var get = got(result[i].url, {https: {rejectUnauthorized: false}});
-                var stream = get.buffer();
-                
-                stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
-                });
-            }
-
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
-        });
-    }));
+        var i1 = await sourav.raganork(match[1],'sourav uyir')
+        var i2 = await sourav.raganork(match[1],'sourav uyir')
+        var i3 = await sourav.raganork(match[1],'sourav uyir')
+        var i4 = await sourav.raganork(match[1],'sourav uyir')
+        var i5 = await sourav.raganork(match[1],'sourav uyir')
+        await message.client.sendMessage(message.jid,i1, MessageType.image,{mimetype: MimeType.jpg, quoted: message.data});
+        await message.client.sendMessage(message.jid,i2, MessageType.image,{mimetype: MimeType.jpg, quoted: message.data});
+        await message.client.sendMessage(message.jid,i3, MessageType.image,{mimetype: MimeType.jpg, quoted: message.data});
+        await message.client.sendMessage(message.jid,i4, MessageType.image,{mimetype: MimeType.jpg, quoted: message.data});
+        await message.client.sendMessage(message.jid,i5, MessageType.image,{mimetype: MimeType.jpg, quoted: message.data});}));
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
